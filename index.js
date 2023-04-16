@@ -12,7 +12,7 @@ const Blog = require('./model/blog');
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect(process.env.CONNECTION_STRING).then(() => {
+mongoose.connect(process.env.CONNECTION_STRING).then(() => { 
     console.log("DATABASE CONNECTED");
 })
 
