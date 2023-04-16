@@ -29,7 +29,7 @@ app.use('/blog', blogRoute)
 
 app.get('/', async(req,res) => {
     const allBlogs = await Blog.find({})
-    res.render('home', {
+    res.render('home', { 
         user: req.user,
         blogs: allBlogs
     })
